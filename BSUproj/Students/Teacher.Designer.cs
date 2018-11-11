@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
@@ -49,31 +50,15 @@
             // 
             // listView1
             // 
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.listView1.Location = new System.Drawing.Point(112, 12);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(126, 63);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(128, 22);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(128, 48);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel2.TabIndex = 4;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
             // 
             // vScrollBar1
             // 
@@ -118,12 +103,11 @@
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
             this.Name = "Teacher";
             this.Text = "Teacher";
+            this.Load += new System.EventHandler(this.Teacher_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,8 +117,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.LinkLabel linkLabel3;

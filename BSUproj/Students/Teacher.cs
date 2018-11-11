@@ -16,5 +16,13 @@ namespace Students
         {
             InitializeComponent();
         }
+
+        private void Teacher_Load(object sender, EventArgs e)
+        {
+
+
+
+
+        }
     }
 }

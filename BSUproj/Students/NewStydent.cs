@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Students
 {
-    public partial class ListOfDisciplines : Form
+    public partial class NewStydent : Form
     {
-        public ListOfDisciplines()
+        public NewStydent()
         {
             InitializeComponent();
         }
 
-        private void pllpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ddToolStripMenuItem_Click(object sender, EventArgs e)
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
         {
 
         }

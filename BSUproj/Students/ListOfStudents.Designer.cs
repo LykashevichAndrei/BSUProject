@@ -42,7 +42,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 385);
+            this.ClientSize = new System.Drawing.Size(378, 302);
             this.Controls.Add(this.treeView1);
             this.Name = "ListOfStudents";
             this.Text = "ListOfStudents";
